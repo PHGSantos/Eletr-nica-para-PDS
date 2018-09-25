@@ -1,0 +1,33 @@
+=>PYTHONTEX#py#default#default#0#code#####26#
+
+from pyx import *
+
+g = graph.graphxy(width=8)
+g.plot(graph.data.function("y(x)=1/((x**2+1)**1/2)", min=0, max=20))
+g.writePDFfile("function")
+print (r'\includegraphics{function}')
+=>PYTHONTEX:SETTINGS#
+version=0.17dev
+outputdir=pythontex-files-main
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python|
+pygfamily=pylabcon|pycon|
