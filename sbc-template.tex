@@ -27,9 +27,6 @@
 \begin{document} 
 
 \maketitle
-\begin{abstract}
-
-\end{abstract}
 
 \begin{resumo}
 O presente documento faz uma análise do circuito RC em série  no domínio da frequência
@@ -47,7 +44,7 @@ O presente documento faz uma análise do circuito RC em série  no domínio da f
  \section{ Metodologia}
 
 
-\section{Diagrama do Circuito}
+\subsection{Diagrama do Circuito}
 
 %DESENHO DO CIRCUITO
 \begin{center}
@@ -62,7 +59,7 @@ O presente documento faz uma análise do circuito RC em série  no domínio da f
  %ANÁLISE DO CIRCUITO
 
  
- \section{Análise do Circuito}
+ \subsection{Análise do Circuito}
 A reatância e a Indutância num capacitor podem ser descritas por:
 
 \begin{equation}
@@ -122,6 +119,8 @@ Por fim, fazendo \textit{s} = j.w o resultado final será:
 \end{equation}
 
 \section{Resultados}
+A função transferência de um circuito é a razão, dependende da frequência, de uma saída para uma entrada, e é útil para encontrar a resposta em frequência de um circuito. No caso do circuito RC análisado, a equação (10) indica a função transferência correspondente ao ganho de tensão.
+
 O gráfico da Figura 1 exibe o comportamento da equação (10), onde o eixo das abicissas é variável independente  \textit{s}. 
 
 \begin{figure}[h]
@@ -137,6 +136,9 @@ print (r'\includegraphics{function}')
 \end{pycode}
 \caption{$\frac{Vo(s)}{Vi(s)}=$$\frac{1}{1+s}$}
 \end{figure}
+
+Como a saída do circuito é obtida pelo capacitor, o circuito se configura como um filtro passa-baixas padrão. Para frequência igual a zero, o ganho em tensão é 1, e para frequencia no infinito o ganho em tensão é 0.
+ 
 
 \section{Referências}
 
